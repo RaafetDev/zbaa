@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Activation Icon -->
+        <ImageView
+            android:id="@+id/activation_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@android:drawable/ic_lock_lock"
+            android:tint="@color/white"
+            android:contentDescription="Activation Icon" />
+
+        <!-- Activation Title -->
+        <TextView
+            android:id="@+id/activation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="App Not Activated"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <!-- Activation Info -->
+        <TextView
+            android:id="@+id/activation_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="To activate this app, please contact the developer via Telegram.\n\nYou will receive an activation code to unlock all features."
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary" />
+
+        <!-- Activate Button -->
+        <Button
+            android:id="@+id/activate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Contact on Telegram"
+            android:textSize="16sp"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="12dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
